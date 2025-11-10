@@ -8,7 +8,6 @@ import TermsOfUse from './components/TermsOfUse';
 import CTASection from './components/CTASection';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
-import Banner from './components/Banner';
 
 export default function App() {
   const [language, setLanguage] = useState<'ar' | 'en'>('ar');
@@ -17,19 +16,10 @@ export default function App() {
     <div className="min-h-screen bg-[#1a1f2e]" dir={language === 'ar' ? 'rtl' : 'ltr'}>
       <Header language={language} setLanguage={setLanguage} />
       <Hero language={language} />
-      <div className="flex justify-center py-8">
-        <Banner />
-      </div>
       <Features language={language} />
       <Bonuses language={language} />
-      <div className="flex justify-center py-8">
-        <Banner />
-      </div>
       <AboutUs language={language} />
       <TermsOfUse language={language} />
-      <div className="flex justify-center py-8">
-        <Banner />
-      </div>
       <CTASection language={language} />
       <Footer language={language} />
       <WhatsAppButton language={language} />
