@@ -11,6 +11,7 @@ export default function Footer({ language }: FooterProps) {
       home: 'الرئيسية',
       features: 'المميزات',
       bonuses: 'المكافآت',
+      about: 'من نحن',
       register: 'سجل الآن',
       trading: 'التداول',
       platforms: 'المنصات',
@@ -32,6 +33,7 @@ export default function Footer({ language }: FooterProps) {
       home: 'Home',
       features: 'Features',
       bonuses: 'Bonuses',
+      about: 'About Us',
       register: 'Register Now',
       trading: 'Trading',
       platforms: 'Platforms',
@@ -73,6 +75,7 @@ export default function Footer({ language }: FooterProps) {
               <li><a href="#home" className="text-gray-400 hover:text-white transition">{t.home}</a></li>
               <li><a href="#features" className="text-gray-400 hover:text-white transition">{t.features}</a></li>
               <li><a href="#bonuses" className="text-gray-400 hover:text-white transition">{t.bonuses}</a></li>
+              <li><a href="#about" className="text-gray-400 hover:text-white transition">{t.about}</a></li>
               <li><a href="https://affs.click/8918d" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 font-semibold">{t.register}</a></li>
             </ul>
           </div>
@@ -80,9 +83,9 @@ export default function Footer({ language }: FooterProps) {
           <div>
             <h3 className="text-white font-bold text-lg mb-4">{t.trading}</h3>
             <ul className="space-y-3">
+              <li><a href="#terms" className="text-gray-400 hover:text-white transition">{t.terms}</a></li>
               <li><a href="https://affs.click/9Weaq" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">{t.platforms}</a></li>
               <li><a href="https://affs.click/8918d" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">{t.accounts}</a></li>
-              <li><a href="https://affs.click/8918d" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">{t.instruments}</a></li>
               <li><a href="https://affs.click/d4QV6" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">{t.education}</a></li>
             </ul>
           </div>

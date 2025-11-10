@@ -14,6 +14,8 @@ export default function Hero({ language }: HeroProps) {
       description: 'نحن نقدم بيئة تداول متفوقة تضع المتداولين في أفضل وضع لتحقيق الأرباح.',
       bonus: 'احصل على مكافأة 100٪ تصل إلى 500$',
       limitedOffer: '*عرض لفترة محدودة',
+      firstDepositBonus: 'احصل على رصيد 30 دولار مجاني عند أول إيداع',
+      demoAccount: 'نمنحك 100,000 دولار للتداول الافتراضي للتعلم',
       register: 'سجل الآن',
       years: '15 سنة',
     },
@@ -25,6 +27,8 @@ export default function Hero({ language }: HeroProps) {
       description: 'We offer a superior trading environment that puts traders in the best position to profit.',
       bonus: 'Get a 100% Bonus up to $500',
       limitedOffer: '*Limited-Time Offer',
+      firstDepositBonus: 'Get $30 free credit on your first deposit',
+      demoAccount: 'We give you $100,000 for virtual trading to learn',
       register: 'Register Now',
       years: '15 Years',
     },
@@ -53,6 +57,16 @@ export default function Hero({ language }: HeroProps) {
 
           <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 max-w-2xl mx-auto shadow-2xl mb-8">
             <h3 className="text-3xl font-bold text-white mb-4">{t.bonus}</h3>
+
+            <div className="space-y-3 mb-6">
+              <div className="bg-white/10 backdrop-blur rounded-lg p-4 border border-white/20">
+                <p className="text-white font-semibold text-lg">{t.firstDepositBonus}</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur rounded-lg p-4 border border-white/20">
+                <p className="text-white font-semibold text-lg">{t.demoAccount}</p>
+              </div>
+            </div>
+
             <a href="https://affs.click/8918d" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-blue-600 px-12 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition transform hover:scale-105 shadow-lg">
               {t.register}
             </a>

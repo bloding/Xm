@@ -3,8 +3,11 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Features from './components/Features';
 import Bonuses from './components/Bonuses';
+import AboutUs from './components/AboutUs';
+import TermsOfUse from './components/TermsOfUse';
 import CTASection from './components/CTASection';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 
 export default function App() {
   const [language, setLanguage] = useState<'ar' | 'en'>('ar');
@@ -15,8 +18,11 @@ export default function App() {
       <Hero language={language} />
       <Features language={language} />
       <Bonuses language={language} />
+      <AboutUs language={language} />
+      <TermsOfUse language={language} />
       <CTASection language={language} />
       <Footer language={language} />
+      <WhatsAppButton language={language} />
     </div>
   );
 }
