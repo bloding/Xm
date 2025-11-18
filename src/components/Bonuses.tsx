@@ -9,7 +9,7 @@ export default function Bonuses({ language }: BonusesProps) {
     ar: {
       title: 'مكافآت حصرية',
       bonusTitle: 'مكافأة 100%',
-      bonusDescription: 'استخدم أموالنا للتداول وعزز عوائدك. احصل على مكافأة 100% تصل إلى 500$',
+      bonusDescription: 'استخدم أموالنا للتداول وعزز عوائدك. احصل على مكافأة 100% تصل إلى 500,000$',
       claimBonus: 'احصل على المكافأة',
       competitions: 'مسابقات XM',
       competitionsDesc: 'اربح حصتك من أكثر من 100,000$ جوائز نقدية',
@@ -21,7 +21,7 @@ export default function Bonuses({ language }: BonusesProps) {
     en: {
       title: 'Exclusive Bonuses',
       bonusTitle: '100% Bonus',
-      bonusDescription: 'Use our funds to trade more and boost returns. Get 100% Bonus up to $500',
+      bonusDescription: 'Use our funds to trade more and boost returns. Get 100% Bonus up to $500,000',
       claimBonus: 'Claim Your Bonus',
       competitions: 'XM Competitions',
       competitionsDesc: 'Win your share of $100,000+ in cash prizes',

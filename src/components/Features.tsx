@@ -9,7 +9,7 @@ export default function Features({ language }: FeaturesProps) {
     ar: {
       title: 'لماذا تختار XM؟',
       features: [
-        { icon: Gift, title: 'مكافآت سخية', description: 'مكافأة إيداع 100٪ تصل إلى 500$' },
+        { icon: Gift, title: 'مكافآت سخية', description: 'مكافأة إيداع 100٪ تصل إلى 500,000$' },
         { icon: Wallet, title: 'إيداع آمن', description: 'طرق إيداع متعددة بدون عمولات' },
         { icon: TrendingUp, title: 'تنفيذ فوري', description: 'سرعة تنفيذ عالية' },
         { icon: BarChart3, title: 'أدوات تحليلية', description: 'رسوم بيانية احترافية' },
@@ -20,7 +20,7 @@ export default function Features({ language }: FeaturesProps) {
     en: {
       title: 'Why Choose XM?',
       features: [
-        { icon: Gift, title: 'Generous Bonuses', description: '100% deposit bonus up to $500' },
+        { icon: Gift, title: 'Generous Bonuses', description: '100% deposit bonus up to $500,000' },
         { icon: Wallet, title: 'Fast Deposits', description: 'Multiple methods with no fees' },
         { icon: TrendingUp, title: 'Instant Execution', description: 'High-speed execution' },
         { icon: BarChart3, title: 'Analysis Tools', description: 'Professional charts' },
