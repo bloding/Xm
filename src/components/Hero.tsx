@@ -67,59 +67,94 @@ export default function Hero({ language }: HeroProps) {
           <p className="text-gray-400 text-sm mb-4">{t.access}</p>
           <p className="text-white font-bold text-2xl mb-10">{t.globalAssets}</p>
 
-          <div className="flex flex-wrap justify-center gap-8 items-center mb-8">
-            <div className="text-center">
-              <div className="flex items-center justify-center mb-2">
-                <svg className="w-8 h-8 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /></svg>
-                <span className="text-white text-sm font-medium">EURUSD</span>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10 max-w-4xl mx-auto">
+            <div className="bg-gradient-to-br from-blue-900/20 to-blue-800/10 border border-blue-700/30 rounded-xl p-4 hover:border-blue-500/50 transition">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-white text-lg font-bold">EURUSD</span>
+                <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </div>
               </div>
               <p className="text-gray-400 text-xs">{language === 'ar' ? 'يورو مقابل دولار' : 'Euro vs U.S. Dollar'}</p>
             </div>
 
-            <div className="text-center">
-              <div className="flex items-center justify-center mb-2">
-                <svg className="w-8 h-8 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /></svg>
-                <span className="text-white text-sm font-medium">US500</span>
+            <div className="bg-gradient-to-br from-blue-900/20 to-blue-800/10 border border-blue-700/30 rounded-xl p-4 hover:border-blue-500/50 transition">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-white text-lg font-bold">US500</span>
+                <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </div>
               </div>
               <p className="text-gray-400 text-xs">{language === 'ar' ? 'إس آند بي 500' : 'S&P 500 (US500)'}</p>
             </div>
 
-            <div className="text-center">
-              <div className="flex items-center justify-center mb-2">
-                <svg className="w-8 h-8 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /></svg>
-                <span className="text-white text-sm font-medium">GOLD</span>
+            <div className="bg-gradient-to-br from-yellow-900/20 to-yellow-800/10 border border-yellow-700/30 rounded-xl p-4 hover:border-yellow-500/50 transition">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-white text-lg font-bold">GOLD</span>
+                <div className="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center">
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </div>
               </div>
               <p className="text-gray-400 text-xs">{language === 'ar' ? 'ذهب' : 'Gold'}</p>
             </div>
 
-            <div className="text-center">
-              <div className="flex items-center justify-center mb-2">
-                <svg className="w-8 h-8 text-orange-500 mr-2" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /></svg>
-                <span className="text-white text-sm font-medium">COFFEE</span>
+            <div className="bg-gradient-to-br from-orange-900/20 to-orange-800/10 border border-orange-700/30 rounded-xl p-4 hover:border-orange-500/50 transition">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-white text-lg font-bold">COFFEE</span>
+                <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </div>
               </div>
               <p className="text-gray-400 text-xs">{language === 'ar' ? 'قهوة أمريكية' : 'US Coffee'}</p>
             </div>
           </div>
         </div>
 
-        <div className="bg-black/40 backdrop-blur rounded-lg py-8 px-6">
-          <p className="text-center text-gray-400 text-sm mb-4">{language === 'ar' ? 'حاصل على لقب أفضل وسيط عاماً بعد عام' : 'Awarded Best Broker Year After Year'}</p>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            <div className="text-gray-500 text-xs text-center">
-              <div className="w-16 h-16 bg-gray-700 rounded mb-2 mx-auto"></div>
-              <p>Award 1</p>
+        <div className="bg-gradient-to-br from-black/50 to-gray-900/30 backdrop-blur rounded-2xl py-10 px-6 border border-gray-800">
+          <p className="text-center text-gray-300 text-base font-semibold mb-8">{language === 'ar' ? 'حاصل على لقب أفضل وسيط عاماً بعد عام' : 'Awarded Best Broker Year After Year'}</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            <div className="text-center group">
+              <div className="w-20 h-20 bg-gradient-to-br from-yellow-600/20 to-yellow-800/20 border-2 border-yellow-600/40 rounded-lg mb-3 mx-auto flex items-center justify-center group-hover:border-yellow-500 transition">
+                <svg className="w-10 h-10 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                </svg>
+              </div>
+              <p className="text-gray-400 text-xs">{language === 'ar' ? 'أفضل وسيط فوركس' : 'Best Forex Broker'}</p>
             </div>
-            <div className="text-gray-500 text-xs text-center">
-              <div className="w-16 h-16 bg-gray-700 rounded mb-2 mx-auto"></div>
-              <p>Award 2</p>
+
+            <div className="text-center group">
+              <div className="w-20 h-20 bg-gradient-to-br from-blue-600/20 to-blue-800/20 border-2 border-blue-600/40 rounded-lg mb-3 mx-auto flex items-center justify-center group-hover:border-blue-500 transition">
+                <svg className="w-10 h-10 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+              </div>
+              <p className="text-gray-400 text-xs">{language === 'ar' ? 'أفضل تنفيذ' : 'Best Execution'}</p>
             </div>
-            <div className="text-gray-500 text-xs text-center">
-              <div className="w-16 h-16 bg-gray-700 rounded mb-2 mx-auto"></div>
-              <p>Award 3</p>
+
+            <div className="text-center group">
+              <div className="w-20 h-20 bg-gradient-to-br from-green-600/20 to-green-800/20 border-2 border-green-600/40 rounded-lg mb-3 mx-auto flex items-center justify-center group-hover:border-green-500 transition">
+                <svg className="w-10 h-10 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+              </div>
+              <p className="text-gray-400 text-xs">{language === 'ar' ? 'أفضل دعم' : 'Best Support'}</p>
             </div>
-            <div className="text-gray-500 text-xs text-center">
-              <div className="w-16 h-16 bg-gray-700 rounded mb-2 mx-auto"></div>
-              <p>Award 4</p>
+
+            <div className="text-center group">
+              <div className="w-20 h-20 bg-gradient-to-br from-purple-600/20 to-purple-800/20 border-2 border-purple-600/40 rounded-lg mb-3 mx-auto flex items-center justify-center group-hover:border-purple-500 transition">
+                <svg className="w-10 h-10 text-purple-500" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                </svg>
+              </div>
+              <p className="text-gray-400 text-xs">{language === 'ar' ? 'أفضل أمان' : 'Best Security'}</p>
             </div>
           </div>
         </div>
