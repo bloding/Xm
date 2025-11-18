@@ -21,12 +21,11 @@ export default function Header({ language, setLanguage }: HeaderProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <a href="https://affs.click/8918d" target="_blank" rel="noopener noreferrer">
-              <img
-                src="https://www.xm.com/wp-content/themes/xm/images/logo/xm-logo-color.svg"
-                alt="XM Logo"
-                className="h-12 w-auto object-contain"
-              />
+            <a href="https://affs.click/8918d" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
+              <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold text-2xl px-4 py-2 rounded-lg">
+                XM
+              </div>
+              <span className="text-gray-300 text-sm">15 Years</span>
             </a>
           </div>
 
