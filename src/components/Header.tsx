@@ -17,12 +17,20 @@ export default function Header({ language, setLanguage }: HeaderProps) {
   const t = content[language];
 
   return (
-    <header className="bg-[#1a1f2e] border-b border-gray-800 fixed w-full top-0 z-50">
+    <header className="bg-[#0a0e1a] border-b border-gray-900 fixed w-full top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <div className="bg-gradient-to-r from-red-600 to-red-700 text-white font-bold text-2xl px-3 py-1 rounded">XM</div>
-            <span className="text-white font-semibold text-xl ml-2">Arabic</span>
+            <div className="flex items-center">
+              <svg className="w-10 h-10" viewBox="0 0 100 100" fill="none">
+                <rect width="100" height="100" fill="#E31E24"/>
+                <text x="50" y="70" fontSize="60" fontWeight="bold" fill="white" textAnchor="middle">XM</text>
+              </svg>
+              <div className="ml-2">
+                <div className="text-white font-bold text-lg leading-none">XM</div>
+                <div className="text-gray-400 text-xs">{language === 'ar' ? '15 سنة' : '15 YEARS'}</div>
+              </div>
+            </div>
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">
