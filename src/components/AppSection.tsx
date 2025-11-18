@@ -73,12 +73,6 @@ export default function AppSection({ language }: AppSectionProps) {
                 <span className="mr-2">←</span> {t.getApp}
               </div>
             </div>
-
-            <div className="absolute left-0 bottom-0 w-64 h-64 opacity-10">
-              <svg viewBox="0 0 200 200" fill="currentColor">
-                <rect x="20" y="20" width="160" height="160" rx="30"/>
-              </svg>
-            </div>
           </a>
 
           <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-8 text-white">
