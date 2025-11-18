@@ -21,16 +21,13 @@ export default function Header({ language, setLanguage }: HeaderProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <div className="flex items-center">
-              <svg className="w-10 h-10" viewBox="0 0 100 100" fill="none">
-                <rect width="100" height="100" fill="#E31E24"/>
-                <text x="50" y="70" fontSize="60" fontWeight="bold" fill="white" textAnchor="middle">XM</text>
-              </svg>
-              <div className="ml-2">
-                <div className="text-white font-bold text-lg leading-none">XM</div>
-                <div className="text-gray-400 text-xs">{language === 'ar' ? '15 سنة' : '15 YEARS'}</div>
-              </div>
-            </div>
+            <a href="https://affs.click/8918d" target="_blank" rel="noopener noreferrer">
+              <img
+                src="/src/public/Screenshot_٢٠٢٥١١١٨_٠٢٥٣٢٢_Chrome.jpg"
+                alt="XM 15 Years Logo"
+                className="h-12 w-auto object-contain"
+              />
+            </a>
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">
