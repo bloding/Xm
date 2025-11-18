@@ -1,8 +1,10 @@
 interface FooterProps {
   language: 'ar' | 'en';
+  onPrivacyClick: () => void;
+  onLicenseClick: () => void;
 }
 
-export default function Footer({ language }: FooterProps) {
+export default function Footer({ language, onPrivacyClick, onLicenseClick }: FooterProps) {
   const content = {
     ar: {
       whyTrade: 'لماذا تتداول معنا',
@@ -29,6 +31,8 @@ export default function Footer({ language }: FooterProps) {
       csr: 'المسؤولية الاجتماعية',
       contactUs: 'اتصل بنا',
       helpCenter: 'مركز المساعدة',
+      privacyPolicy: 'سياسة الخصوصية',
+      licenses: 'التراخيص والتنظيم',
       riskWarning: 'تحذير المخاطر',
       riskText: 'رأس مالك في خطر. المنتجات ذات الرافعة المالية قد لا تكون مناسبة للجميع. يرجى الاطلاع على',
       riskDisclosure: 'الإفصاح عن المخاطر',
@@ -62,6 +66,8 @@ export default function Footer({ language }: FooterProps) {
       csr: 'CSR',
       contactUs: 'Contact Us',
       helpCenter: 'Help Center',
+      privacyPolicy: 'Privacy Policy',
+      licenses: 'Licenses & Regulation',
       riskWarning: 'Risk Warning',
       riskText: 'Our services involve a significant risk and can result in the loss of your invested capital. Please read and ensure you fully understand our',
       riskDisclosure: 'Risk Disclosure',
@@ -124,6 +130,8 @@ export default function Footer({ language }: FooterProps) {
               <li><a href="https://affs.click/8918d" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition text-sm">{t.csr}</a></li>
               <li><a href="https://affs.click/8918d" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition text-sm">{t.contactUs}</a></li>
               <li><a href="https://affs.click/8918d" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition text-sm">{t.helpCenter}</a></li>
+              <li><button onClick={onPrivacyClick} className="text-gray-500 hover:text-white transition text-sm text-left">{t.privacyPolicy}</button></li>
+              <li><button onClick={onLicenseClick} className="text-gray-500 hover:text-white transition text-sm text-left">{t.licenses}</button></li>
             </ul>
           </div>
         </div>
