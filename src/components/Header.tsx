@@ -23,8 +23,8 @@ export default function Header({ language, setLanguage }: HeaderProps) {
           <div className="flex items-center">
             <a href="https://affs.click/8918d" target="_blank" rel="noopener noreferrer">
               <img
-                src="/src/public/Screenshot_٢٠٢٥١١١٨_٠٢٥٣٢٢_Chrome.jpg"
-                alt="XM 15 Years Logo"
+                src="https://www.xm.com/wp-content/themes/xm/images/logo/xm-logo-color.svg"
+                alt="XM Logo"
                 className="h-12 w-auto object-contain"
               />
             </a>
