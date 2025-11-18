@@ -21,13 +21,12 @@ export default function Header({ language, setLanguage }: HeaderProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <a href="https://affs.click/8918d" target="_blank" rel="noopener noreferrer" className="flex items-center">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-green-600 rounded-lg blur opacity-75"></div>
-                <div className="relative bg-gradient-to-r from-green-500 to-green-600 text-white font-black text-3xl px-6 py-3 rounded-lg shadow-xl tracking-tight">
-                  XM
-                </div>
-              </div>
+            <a href="https://affs.click/8918d" target="_blank" rel="noopener noreferrer">
+              <img
+                src="/src/public/0x0.png"
+                alt="XM 15 Years"
+                className="h-16 w-auto object-contain"
+              />
             </a>
           </div>
 
