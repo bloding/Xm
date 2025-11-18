@@ -23,7 +23,7 @@ export default function Header({ language, setLanguage }: HeaderProps) {
           <div className="flex items-center">
             <a href="https://affs.click/8918d" target="_blank" rel="noopener noreferrer">
               <img
-                src="/src/public/0x0.png"
+                src="/0x0.png"
                 alt="XM 15 Years"
                 className="h-16 w-auto object-contain"
               />
